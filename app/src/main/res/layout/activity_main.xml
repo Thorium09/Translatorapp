@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD8E09">
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_margin="5dp"
+        android:text="Numbers" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#379237">
+    <TextView
+        android:id="@+id/text4"
+        android:background="?android:attr/selectableItemBackground"
+        style="@style/CategoryStyle"
+        android:layout_margin="5dp"
+        android:text="Family"
+        />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8800A0">
+    <TextView
+        android:id="@+id/text5"
+        android:layout_margin="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        style="@style/CategoryStyle"
+        android:text="Colors" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16AFCA">
+    <TextView
+        android:id="@+id/text6"
+        android:layout_margin="5dp"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Phrases" />
+    </FrameLayout>
+</LinearLayout>

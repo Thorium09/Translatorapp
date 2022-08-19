@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/download"
+        android:label="English2Marathi"
+        android:roundIcon="@mipmap/download"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaratHindi">
+        <activity
+            android:label="Phrases"
+            android:name=".Phrase_activity"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Colour"
+            android:name=".Color_activity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Family"
+            android:name=".Family_activity"
+            android:exported="true" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:parentActivityName=".MainActivity"
+            android:label="Numbers"
+            android:name=".Numbers_activity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
